@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --red: #f63232;
+    --white: white;
+    --text: #4b4b4b;
+    --Nav: #f4f4f4;
+    --yellow: #feb614;
+
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.container{
+    width: 70%;
+    margin: 0px auto;
+}
+#header{
+    background-color: var(--red);
+    height: 110px;
+    text-align: center;
+    padding-top: 22px;
+    box-sizing: border-box;
+}
+#header button{
+    background-color: var(--red);
+    color: white;
+    border: solid 8px;
+    padding: 5px 14px;
+    border-radius: 50px;
+    font-size: 36px;
+}
+#header-image{
+    height: 664px;
+    background-image: url(../Img/banner.png);
+    background-size: 100%;
+    box-sizing: border-box;
+    background-position: center center;
+    padding-top: 170px;
+    color: white;
+}
+#header-title{
+    background-color:var(--yellow) ;
+    width: 45%;
+    padding: 20px;
+}
+#header-title h3{
+    font-size: 100px;
+}
+#header-title h1{
+    font-size: 150px;
+}
+#navigation{
+    background-color: var(--Nav);
+    height: 60px;
+    box-sizing: border-box;
+    padding-top: 15px;
+    padding-left: 275px;
+}
+#navigation ul li{
+    float: left;
+    list-style: none;
+    margin-right: 160px;
+    font-size: 24px;
+    text-align: center;
+    color: var(--text);
+}
+#navigation ul li:nth-child(1){
+    color: var(--red);
+}
+#about-para{
+    margin-top: 80px;
+    margin-bottom: 90px;
+}
+#about-para h1{
+    color: var(--red);
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+#about-para h3{
+    color: var(--text);
+    font-size: 28px;
+    padding-bottom: 5px;
+}
+#about-para p{
+    line-height: 25px;
+}
+#image-section{
+    margin-left: 290px;
+    margin-bottom: 80px;
+}
+.image{
+    float: left;
+    width: 40%;
+    margin-right: 120px;
+}
+.image img{
+    width: 100%;
+}
+.image:nth-child(2){
+    margin-right: 0px;
+}
+#join-today{
+    background-color: var(--Nav);
+    height: 270px;
+    padding-top: 60px;
+    text-align: center;
+    color: var(--text);
+}
+#join-today h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+#join-today p{
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+#join-today button{
+    background-color: var(--white);
+    color:var(--text);
+    border: none;
+    padding: 15px 70px 15px 25px;
+    border-radius: 50px;
+    font-size: 25px;
+}
+#footer{
+    background-color: var(--red);
+    text-align: center;
+    height: 42px;
+    color: var(--white);
+    padding-top: 28px;
+}
+#footer p{
+    font-size: 18px;
+}
+@media (max-width: 1200px){
+    #header-image{
+        height: 564px;
+        padding-top: 157px;
+    }
+    #header-title h3 {
+        font-size: 70px;
+    }
+    #header-title h1 {
+        font-size: 110px;
+    }
+    #navigation{
+        padding-left: 151px;
+    }
+    #navigation ul li{
+        margin-right: 110px;
+    }
+    #about-para h3{
+        font-size: 22px;
+    }
+    #image-section {
+        margin-left: 201px;
+    }
+}
+@media (max-width: 1024px){
+    #header-image {
+        height: 478px;
+        padding-top: 123px;
+    }
+    #header-title h3 {
+        font-size: 60px;
+    }
+    #header-title h1 {
+        font-size: 90px;
+    }
+    #navigation ul li {
+        margin-right: 85px;
+    }
+    #navigation {
+        padding-left: 90px;
+    }
+    #image-section {
+        margin-left: 166px;
+    }
+}
+@media (max-width: 768px){
+    #header-image {
+        height: 352px;
+        padding-top: 82px;
+    }
+    #header-title h3 {
+        font-size: 50px;
+    }
+    #header-title h1 {
+        font-size: 70px;
+    }
+    #navigation {
+        padding-left: 33px;
+    }
+    #navigation ul li {
+        margin-right: 42px;
+    }
+    #about-para h3 {
+        font-size: 18px;
+    }
+    .image {
+        float: none;
+        width: 80%;
+        margin-bottom: 40px;
+}
+    #join-today p {
+    font-size: 18px;
+}
+}
+@media (max-width: 560px){
+    .container{
+        width: 90%;
+    }
+    #header-image {
+        height: 231px;
+        padding-top: 46px;
+    }
+    #header-title h3 {
+        font-size: 35px;
+    }
+    #header-title h1 {
+        font-size: 50px;
+    }
+    #navigation {
+        background-color: var(--Nav);
+        height: 210px;
+        padding-left: 0;
+    }
+    #navigation ul li{
+        float: none;
+        padding-bottom: 20px;
+        margin-right: 34px;
+    }
+    #image-section{
+        margin-left: 70px;
+    }
+}
